@@ -7,7 +7,7 @@ const functionApi = "";
 const getVisitCount = () => {
     let count = 30;
     fetch(functionApi).then(response => {
-        retun response.json()
+        return response.json()
     }).then(response =>{
         console.log("Website called function API");
         count = response.count;
@@ -15,7 +15,7 @@ const getVisitCount = () => {
     }).catch(function(error){
         console.log(error);
     });
-    retun count;
+    return count;
 
 
 }
